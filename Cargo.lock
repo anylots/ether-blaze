@@ -18,6 +18,29 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "512761e0bb2578dd7380c6baaa0f4ce03e84f95e960231d1dec8bf4d7d6e2627"
 
 [[package]]
+name = "agent-twitter-client"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9eaafaf428beb79f140b73c7d71855a1d599bdd18c9ae971e4d01ec0493e8eca"
+dependencies = [
+ "async-trait",
+ "chrono",
+ "cookie 0.16.2",
+ "dotenv",
+ "lazy_static",
+ "regex",
+ "reqwest 0.11.27",
+ "serde",
+ "serde_json",
+ "thiserror 1.0.69",
+ "tokio",
+ "totp-rs",
+ "tracing",
+ "url",
+ "urlencoding",
+]
+
+[[package]]
 name = "ahash"
 version = "0.8.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1394,13 +1417,13 @@ dependencies = [
 name = "ether-blaze"
 version = "0.1.0"
 dependencies = [
+ "agent-twitter-client",
  "alloy",
  "anyhow",
  "dotenv",
  "log",
  "once_cell",
  "rig-core",
- "rig-twitter",
  "serde",
  "serde_json",
  "thiserror 1.0.69",
@@ -2871,27 +2894,6 @@ dependencies = [
  "serde_json",
  "thiserror 1.0.69",
  "tracing",
-]
-
-[[package]]
-name = "rig-twitter"
-version = "0.1.0"
-source = "git+https://github.com/cornip/rig.git?branch=main#9295ffa5559f8d2780b2149fc6dcf71d31c0a44e"
-dependencies = [
- "async-trait",
- "chrono",
- "cookie 0.16.2",
- "lazy_static",
- "regex",
- "reqwest 0.11.27",
- "serde",
- "serde_json",
- "thiserror 1.0.69",
- "tokio",
- "totp-rs",
- "tracing",
- "url",
- "urlencoding",
 ]
 
 [[package]]

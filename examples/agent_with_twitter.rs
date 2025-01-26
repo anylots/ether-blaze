@@ -1,6 +1,5 @@
 use anyhow::Result;
 use ether_blaze::chains::CHAIN_INFOS;
-use ether_blaze::erc20_transfer::ERC20Transfer;
 use ether_blaze::tools::twitter::TwitterTool;
 use rig::completion::Prompt;
 use rig::providers::openai;

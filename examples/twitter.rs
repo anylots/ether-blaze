@@ -1,6 +1,6 @@
 use dotenv::dotenv;
-use rig_twitter::scraper::Scraper;
-use rig_twitter::search::SearchMode;
+use agent_twitter_client::scraper::Scraper;
+use agent_twitter_client::search::SearchMode;
 use std::{
     env,
     fs::{self, File},

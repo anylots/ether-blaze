@@ -1,8 +1,8 @@
 use std::{env, fs};
 
+use agent_twitter_client::scraper::Scraper;
 use anyhow::{anyhow, Result};
 use rig::{completion::ToolDefinition, tool::Tool};
-use rig_twitter::scraper::Scraper;
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
